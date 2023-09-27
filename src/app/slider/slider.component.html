@@ -1,0 +1,40 @@
+<div class="back">
+  <div class="container">
+    <header>
+      <h1>Slider Design</h1>
+      <hr>
+      <p>---Ymir songs---</p>
+    </header>
+
+    <div class="image-container">
+
+      <h3>{{ currentImage }} / 13</h3>
+      <div id="effect" [classList]="effectClass" ></div>
+      <button id="prev-btn" (click)="slidePrev()" [disabled]="buttonDisable"><i class="fa-solid fa-arrow-left"></i></button>
+      <div class="slider" #slider>
+        <div><img src="./assets/wild-hunt.png" alt="Wild hunt music image"></div>
+        <div><img src="./assets/outcast.png" alt="Outcast music image"></div>
+        <div><img src="./assets/masquerade.png" alt="Masquerade music image"></div>
+        <div><img src="./assets/skins.png" alt="Skins music image"></div>
+        <div><img src="./assets/rise.png" alt="Rise music image"></div>
+        <div><img src="./assets/heartsick.png" alt="Heartsick music image"></div>
+        <div><img src="./assets/fimbulvetr.png" alt="Fimbulvetr music image"></div>
+        <div><img src="./assets/tripwire.png" alt="Tripwire music image"></div>
+        <div><img src="./assets/craving.png" alt="Craving music image"></div>
+        <div><img src="./assets/carpe-diem.png" alt="Carpe diem music image"></div>
+        <div><img src="./assets/never-change.png" alt="Never change music image"></div>
+        <div><img src="./assets/fall.png" alt="Fall music image"></div>
+        <div><img src="./assets/uebok.png" alt="Uebok music image"></div>
+      </div>
+      <div class="song-title">
+        <p>{{ songName }}</p>
+      </div>
+      <button id="next-btn" (click)="slideNext()" [disabled]="buttonDisable"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <div class="links">
+      <a href="https://github.com/VictorMuniz7" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/victor-muniz-236842267/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+</div>
