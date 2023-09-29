@@ -8,10 +8,11 @@
 
     <div class="image-container">
 
-      <h3>{{ currentImage }} / 13</h3>
+      <h3>{{ currentImage }} / 14</h3>
       <div id="effect" [classList]="effectClass" ></div>
       <button id="prev-btn" (click)="slidePrev()" [disabled]="buttonDisable"><i class="fa-solid fa-arrow-left"></i></button>
       <div class="slider" #slider>
+        <div><img src="./assets/sword-in-stone.png" alt="Sword in Stone music image"></div>
         <div><img src="./assets/wild-hunt.png" alt="Wild hunt music image"></div>
         <div><img src="./assets/outcast.png" alt="Outcast music image"></div>
         <div><img src="./assets/masquerade.png" alt="Masquerade music image"></div>

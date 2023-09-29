@@ -1,5 +1,4 @@
-import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
-import { fakeAsync } from '@angular/core/testing';
+import { Component, ElementRef, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-slider',
@@ -14,7 +13,7 @@ export class SliderComponent implements OnInit {
   cooldown: number = 1500;
 
   effectClass: string = ''
-  songName: string = 'Wild Hunt'
+  songName: string = 'Sword in Stone'
   mediaScreen: string = 'small'
   interval = this.startAutomaticScroll()
 
@@ -27,19 +26,20 @@ export class SliderComponent implements OnInit {
   }
 
   songMap: { [key: number]: string } = {
-    1: 'Wild Hunt',
-    2: 'Outcast',
-    3: 'Masquerade',
-    4: 'Skins',
-    5: 'Rise',
-    6: 'Heartsick',
-    7: 'Fimbulvetr',
-    8: 'Tripwire',
-    9: 'Craving',
-    10: 'Carpe Diem',
-    11: 'Never Change',
-    12: 'Fall',
-    13: 'Uebok',
+    1: 'Sword in Stone',
+    2: 'Wild Hunt',
+    3: 'Outcast',
+    4: 'Masquerade',
+    5: 'Skins',
+    6: 'Rise',
+    7: 'Heartsick',
+    8: 'Fimbulvetr',
+    9: 'Tripwire',
+    10: 'Craving',
+    11: 'Carpe Diem',
+    12: 'Never Change',
+    13: 'Fall',
+    14: 'Uebok',
   };
 
   constructor(
@@ -84,7 +84,7 @@ export class SliderComponent implements OnInit {
 
   slideNext() {
    this.scrollDetails()
-    if (this.currentImage < 13) {
+    if (this.currentImage < 14) {
       this.currentImage += 1;
       this.setSongName();
       this.scrollFunction(this.mediaMap[this.mediaScreen])
