@@ -13,7 +13,7 @@ export class SliderComponent implements OnInit {
   cooldown: number = 1500;
 
   effectClass: string = ''
-  songName: string = 'Fatal Faith'
+  songName: string = 'Contraband'
   mediaScreen: string = 'small'
   interval = this.startAutomaticScroll()
 
@@ -26,22 +26,23 @@ export class SliderComponent implements OnInit {
   }
 
   songMap: { [key: number]: string } = {
-    1: 'Fatal Faith',
-    2: 'Bounce',
-    3: 'Sword in Stone',
-    4: 'Wild Hunt',
-    5: 'Outcast',
-    6: 'Masquerade',
-    7: 'Skins',
-    8: 'Rise',
-    9: 'Heartsick',
-    10: 'Fimbulvetr',
-    11: 'Tripwire',
-    12: 'Craving',
-    13: 'Carpe Diem',
-    14: 'Never Change',
-    15: 'Fall',
-    16: 'Uebok',
+    1: 'Contraband',
+    2: 'Fatal Faith',
+    3: 'Bounce',
+    4: 'Sword in Stone',
+    5: 'Wild Hunt',
+    6: 'Outcast',
+    7: 'Masquerade',
+    8: 'Skins',
+    9: 'Rise',
+    10: 'Heartsick',
+    11: 'Fimbulvetr',
+    12: 'Tripwire',
+    13: 'Craving',
+    14: 'Carpe Diem',
+    15: 'Never Change',
+    16: 'Fall',
+    17: 'Uebok',
   };
 
   constructor(
@@ -86,7 +87,7 @@ export class SliderComponent implements OnInit {
 
   slideNext() {
    this.scrollDetails()
-    if (this.currentImage < 16) {
+    if (this.currentImage < 17) {
       this.currentImage += 1;
       this.setSongName();
       this.scrollFunction(this.mediaMap[this.mediaScreen])
