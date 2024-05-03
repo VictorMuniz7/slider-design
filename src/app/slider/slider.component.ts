@@ -13,7 +13,7 @@ export class SliderComponent implements OnInit {
   cooldown: number = 1500;
 
   effectClass: string = ''
-  songName: string = 'New World Remix'
+  songName: string = 'Creep'
   mediaScreen: string = 'small'
   interval = this.startAutomaticScroll()
 
@@ -26,25 +26,26 @@ export class SliderComponent implements OnInit {
   }
 
   songMap: { [key: number]: string } = {
-    1: 'New World Remix',
-    2: 'Buried Beneath You',
-    3: 'Contraband',
-    4: 'Fatal Faith',
-    5: 'Bounce',
-    6: 'Sword in Stone',
-    7: 'Wild Hunt',
-    8: 'Outcast',
-    9: 'Masquerade',
-    10: 'Skins',
-    11: 'Rise',
-    12: 'Heartsick',
-    13: 'Fimbulvetr',
-    14: 'Tripwire',
-    15: 'Craving',
-    16: 'Carpe Diem',
-    17: 'Never Change',
-    18: 'Fall',
-    19: 'Uebok',
+    1: 'Creep',
+    2: 'New World Remix',
+    3: 'Buried Beneath You',
+    4: 'Contraband',
+    5: 'Fatal Faith',
+    6: 'Bounce',
+    7: 'Sword in Stone',
+    8: 'Wild Hunt',
+    9: 'Outcast',
+    10: 'Masquerade',
+    11: 'Skins',
+    12: 'Rise',
+    13: 'Heartsick',
+    14: 'Fimbulvetr',
+    15: 'Tripwire',
+    16: 'Craving',
+    17: 'Carpe Diem',
+    18: 'Never Change',
+    19: 'Fall',
+    20: 'Uebok',
   };
 
   constructor(
@@ -89,7 +90,7 @@ export class SliderComponent implements OnInit {
 
   slideNext() {
    this.scrollDetails()
-    if (this.currentImage < 19) {
+    if (this.currentImage < 20) {
       this.currentImage += 1;
       this.setSongName();
       this.scrollFunction(this.mediaMap[this.mediaScreen])
